@@ -1,0 +1,10 @@
+# Terragrunt cache
+.terragrunt-cache/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Other
+.DS_Store
