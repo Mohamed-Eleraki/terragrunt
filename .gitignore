@@ -1,6 +1,7 @@
 # Terragrunt cache
 .terragrunt-cache/
 .terragrunt-stack/
+*.terragrunt-cache*
 
 # Terraform
 .terraform/
