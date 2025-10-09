@@ -7,6 +7,8 @@
 *.tfstate
 *.tfstate.backup
 *.terraform.lock.hcl
+registry.terraform.io
+*registry.terraform.io*
 
 # Other
 .DS_Store
