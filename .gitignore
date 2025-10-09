@@ -13,3 +13,6 @@ registry.terraform.io
 
 # Other
 .DS_Store
+explicit/demo01/dev/.terragrunt-stack/log-analytics/terragrunt.hcl
+explicit/demo02/dev/.terragrunt-stack/log-analytics/terragrunt.hcl
+explicit/demo02/dev/.terragrunt-stack/resource-group/terragrunt.hcl
