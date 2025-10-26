@@ -20,7 +20,7 @@ unit "network" {
     values = {
         host_environment_short = "d"
         function = "common"
-        resource_number = "01"
+        resource_number = "1"
         region_short = "we"
         region = "westeurope"
         log_analytics_retention = 30

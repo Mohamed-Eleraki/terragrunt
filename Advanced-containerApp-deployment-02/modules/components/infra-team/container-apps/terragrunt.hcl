@@ -1,5 +1,5 @@
 terraform {
-  source = "../../../modules/base/container-apps"
+  source = "${get_repo_root()}/Advanced-containerApp-deployment-02/modules/base/container-apps"
 }
 
 include {
@@ -25,6 +25,7 @@ dependency "container-reg" {
 
   mock_outputs = {  # dummy value
     container_reg_login_server = "mock-container-reg-id"
+    container_reg_id           = "mock-container-reg-login-server"
   }
 }
 
@@ -44,5 +45,6 @@ inputs = {
   image_uri              = values.image_uri
   target_port            = values.target_port
 
+  container_reg_id         = dependency.container-reg.outputs.container_reg_id
   container_reg_login_server = dependency.container-reg.outputs.container_reg_login_server
 }

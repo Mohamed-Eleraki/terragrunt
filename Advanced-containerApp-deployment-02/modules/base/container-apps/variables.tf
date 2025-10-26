@@ -13,10 +13,6 @@ variable "region_short" {
   description = "region short name"
   type        = string
 }
-variable "log_analytics_retention" {
-  description = "log analytics retention in days"
-  type = number
-}
 variable "function" {
   description = "the function of the resource e.g. webingestion, api, etc."
   type        = string
@@ -29,10 +25,10 @@ variable "resource_group_name" {
   description = "the name of the resource group"
   type        = string
 }
-variable "resource_group_location" {
-  description = "the location of the resource group"
-  type        = string
-}
+# variable "resource_group_location" {
+#   description = "the location of the resource group"
+#   type        = string
+# }
 variable "container_app_environment_id" {
   description = "the id of the container app environment"
   type        = string  

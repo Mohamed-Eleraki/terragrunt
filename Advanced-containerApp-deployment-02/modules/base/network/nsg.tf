@@ -24,11 +24,4 @@ resource "azurerm_network_security_group" "eraki_capp_we_nsg" {
   }
 }
 
-resource "azurerm_subnet_network_security_group_association" "eraki_common_we_nsg_association" {
-  subnet_id                 = azurerm_subnet.eraki_common_we_subnet.id
-  network_security_group_id = azurerm_network_security_group.eraki_common_we_nsg.id
-}
-resource "azurerm_subnet_network_security_group_association" "eraki_capp_we_nsg_association" {
-  subnet_id                 = azurerm_subnet.eraki_capp_we_subnet.id
-  network_security_group_id = azurerm_network_security_group.eraki_capp_we_nsg.id
-}
+

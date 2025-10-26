@@ -21,3 +21,4 @@ resource "azurerm_subnet_route_table_association" "eraki_capp_we_rt_association"
   subnet_id      = azurerm_subnet.eraki_capp_we_subnet.id
   route_table_id = azurerm_route_table.eraki_capp_we_rt.id
 }
+
