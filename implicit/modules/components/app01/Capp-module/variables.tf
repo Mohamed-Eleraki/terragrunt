@@ -19,7 +19,7 @@ variable "sysrole" {
 # Log analytics variables
 variable "resource_number" {
   description = "log analytics resource number"
-  type        = string
+  type        = number
 }
 variable "retention_in_days" {
   description = "log analytics retention in days"

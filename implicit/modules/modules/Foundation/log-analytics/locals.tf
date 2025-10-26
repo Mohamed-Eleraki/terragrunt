@@ -3,7 +3,7 @@ locals {
     {
       Region         = var.region
       Automation     = "True"
-      ServiceAccount = "Terrafrom-pipeline"
+      ServiceAccount = "Terragrunt-Deployer"
       CostCenter     = "West Europe"
     },
     {

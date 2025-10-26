@@ -25,7 +25,7 @@ variable "sysrole" {
 
 variable "resource_number" {
   description = "vnet resource number"
-  type        = string
+  type        = number
 }
 
 variable "address_space" {

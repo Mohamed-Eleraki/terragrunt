@@ -25,7 +25,7 @@ variable "sysrole" {
 
 variable "resource_number" {
   description = "storage account resource number"
-  type        = string
+  type        = number
 }
 
 variable "subnet_id" {
