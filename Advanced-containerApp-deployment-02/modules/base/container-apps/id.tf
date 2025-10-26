@@ -1,6 +1,6 @@
 resource "azurerm_user_assigned_identity" "eraki_capp_managed_identity_reg" {
   name = "mi-${var.host_environment_short}-regpull-${var.region_short}-01"
-  resource_group_name = var.resource_group_name  # azurerm_resource_group.pepco_foundation_we_rg.name
+  resource_group_name = var.resource_group_name  # azurerm_resource_group.eraki_foundation_we_rg.name
   location = var.region 
 }
 
