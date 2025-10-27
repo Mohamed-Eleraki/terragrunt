@@ -99,7 +99,7 @@ unit "container-app" {
     values = {
         host_environment_short = "d"
         function = "app1"
-        resource_number = "01"
+        resource_number = "02"
         region_short = "we"
         region = "westeurope"
         container_name = "myappcontainer"

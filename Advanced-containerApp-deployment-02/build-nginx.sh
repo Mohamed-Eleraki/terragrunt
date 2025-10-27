@@ -28,9 +28,9 @@ az login --use-device-code
 echo "Logging in to Azure Container Registry..."
 az acr login --name $ACR_NAME
 
-# Build the Docker image
-echo "Building Docker image..."
-docker build -t $ACR_NAME.azurecr.io/$IMAGE_NAME:$TAG .
+# Build the Docker image for linux/amd64 platform
+echo "Building Docker image for linux/amd64..."
+docker build --platform linux/amd64 -t $ACR_NAME.azurecr.io/$IMAGE_NAME:$TAG .
 
 # Push the image to ACR
 echo "Pushing image to Azure Container Registry..."
