@@ -10,7 +10,7 @@ provider "azurerm" {
   #   retry_delay = 10
   # }
   resource_provider_registrations = "none"
-  subscription_id                 = "856880af-e2ac-41b2-b5fb-e7ebfe4d97bc"
+  subscription_id                 = "SUB_ID"
 }
 terraform {
   backend "azurerm" {}
